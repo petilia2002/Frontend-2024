@@ -2,6 +2,7 @@
 
 // Task 1.
 // Реализовать метод, возвращающий максимальное значение среди отрицательных чисел массива целых чисел.
+
 const findMaxNegative = (arr: Array<number>): number => {
   let maxNegative: number = Number.NEGATIVE_INFINITY;
   for (let num of arr) {
@@ -20,6 +21,7 @@ console.log(maxNegative); // -1
 // Task 2.
 /* Реализовать метод, возвращающий матрицу целых чисел, составленный из матрицы булевых значений (значение true
 переходит в формат числа 1, а false в формат числа 0).*/
+
 const createIntegerMatrix = (boolean_matrix: boolean[][]): number[][] => {
   return boolean_maxtrix.map((row) => row.map((item) => (item ? 1 : 0)));
 };
@@ -37,6 +39,7 @@ console.log(integer_matrix);
 // Task 3.
 /* Создайте кортеж, который может содержать только 2 строковых и 1 числовое значения (порядок следования: число,
 строка0, строка1). Реализуйте метод, возвращающий конкатенацию строк в формате: строка1: строка0. */
+
 const tuple: [number, string, string] = [1, "Ilya Petrenckov", "Developer"];
 
 const showTuple = (tuple: [number, string, string]): string => {
@@ -48,6 +51,7 @@ console.log(showTuple(tuple));
 // Task 4.
 /* Создайте тип перечисление для типов стандартных аминокислот (Глицин, Глутамин и т.д). Выведите какой-либо тип
 аминокислоты в консоль. */
+
 const enum AminoAcid {
   Alanine = "Аланин",
   Arginine = "Аргинин",
@@ -76,6 +80,7 @@ console.log(AminoAcid.Histidine);
 // Task 5.
 /* Используя следующий код, реализуйте метод, который будет выводить информацию в консоль о создаваемом объекте типа
 Cat или Dog, применяя Обобщенный тип, ограниченный типом Pet. */
+
 class Pet {
   name: string = "Some pet";
   age: number = -1;
@@ -117,6 +122,7 @@ showPetInfo(cat);
 случаев возможно его использование при реализации массива). Добавьте собственные поля стандартных типов, корректно
 характеризующие ту или иную предметную область, совпадающую с вашим типом перечисления. Создайте объект на основе
 вашего типа и выведите его в консоль в формате JSON. */
+
 type AminoAcidInfo = {
   name: AminoAcid;
   formula: string;
