@@ -74,3 +74,4 @@ const alanine = {
 console.log(alanine);
 const jsonAlanine = JSON.stringify(alanine, null, 2);
 console.log(jsonAlanine);
+console.log("Lab1 is completed!");

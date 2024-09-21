@@ -113,9 +113,9 @@ const pet = new Pet();
 const dog = new Dog();
 const cat = new Cat();
 
-showPetInfo(pet);
-showPetInfo(dog);
-showPetInfo(cat);
+showPetInfo<Pet>(pet);
+showPetInfo<Dog>(dog);
+showPetInfo<Cat>(cat);
 
 // Task 6.
 /* Создайте тип с применением перечисления из 3го задания (для использования его в качестве типа поля, для некоторых
@@ -142,3 +142,4 @@ console.log(alanine);
 
 const jsonAlanine = JSON.stringify(alanine, null, 2);
 console.log(jsonAlanine);
+console.log("Lab1 is completed!");
