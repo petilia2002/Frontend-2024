@@ -200,7 +200,7 @@ export namespace Transport {
     P = "P", // Пикапы
   }
 
-  interface ICar extends Vehicle {
+  interface ICar extends IVehicle {
     bodyType: CarBody;
     carType: CarType;
   }
@@ -247,7 +247,7 @@ export namespace Transport {
     }
   }
 
-  interface IMotorbike extends Vehicle {
+  interface IMotorbike extends IVehicle {
     typeFrame: string;
     forSports: boolean;
   }

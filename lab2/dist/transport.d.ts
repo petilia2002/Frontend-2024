@@ -95,7 +95,7 @@ export declare namespace Transport {
         M = "M",
         P = "P"
     }
-    interface ICar extends Vehicle {
+    interface ICar extends IVehicle {
         bodyType: CarBody;
         carType: CarType;
     }
@@ -109,7 +109,7 @@ export declare namespace Transport {
         set carType(carType: CarType);
         displayInfo(): void;
     }
-    interface IMotorbike extends Vehicle {
+    interface IMotorbike extends IVehicle {
         typeFrame: string;
         forSports: boolean;
     }
