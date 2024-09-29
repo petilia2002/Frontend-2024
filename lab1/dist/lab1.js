@@ -25,7 +25,7 @@ const showTuple = (tuple) => {
     return tuple[2] + ": " + tuple[1];
 };
 console.log(showTuple(tuple));
-console.log("\u0413\u0438\u0441\u0442\u0438\u0434\u0438\u043D");
+console.log("Histidine");
 class Pet {
     constructor() {
         this.name = "Some pet";
@@ -65,7 +65,7 @@ showPetInfo(pet);
 showPetInfo(dog);
 showPetInfo(cat);
 const alanine = {
-    name: "\u0410\u043B\u0430\u043D\u0438\u043D",
+    name: "Alanine",
     formula: "C3H7NO2",
     mass: 89.09,
     source: "Plants",
