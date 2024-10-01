@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // или другой целевой уровень ECMAScript
+    "module": "ES2015",
+    "moduleResolution": "Node",
+    "outDir": "./dist", // папка для выходных файлов
+    "declaration": true,
+    "removeComments": true, // удаление комментариев из выходного кода
+    "strict": true, // строгий режим
+    "experimentalDecorators": true
+  },
+  "lib": ["es6", "dom"],
+  "include": ["src/**/*"], // директории, которые нужно включить
+  "exclude": ["node_modules", "dist"] // директории, которые нужно исключить
+}
