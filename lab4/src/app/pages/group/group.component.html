@@ -1,0 +1,7 @@
+<div class="group-info">
+  <h3>Information about the group</h3>
+  <p *ngIf="groupId; else groupNotFound">Student group: {{ groupId }}</p>
+  <ng-template #groupNotFound>
+    <p>Group not found..</p>
+  </ng-template>
+</div>
