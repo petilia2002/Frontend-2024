@@ -9,12 +9,12 @@
       "birthYear": 2003
     },
     {
-      "id": 2,
       "fullName": "Петренков Илья Алексеевич",
       "course": 4,
       "groupId": 1,
       "year": 2020,
-      "birthYear": 2002
+      "birthYear": 2002,
+      "id": 2
     },
     {
       "id": 3,
@@ -39,11 +39,68 @@
       "groupId": 3,
       "year": 2022,
       "birthYear": 2004
+    },
+    {
+      "fullName": "Илья",
+      "course": 0,
+      "year": 2020,
+      "birthYear": 2000,
+      "id": 6,
+      "groupId": 3
+    },
+    {
+      "fullName": "",
+      "course": 0,
+      "year": 2020,
+      "birthYear": 2000,
+      "groupId": 3,
+      "id": 7
+    },
+    {
+      "fullName": "",
+      "course": 0,
+      "year": 2020,
+      "birthYear": 2000,
+      "groupId": 1,
+      "id": 8
+    },
+    {
+      "fullName": null,
+      "course": null,
+      "year": null,
+      "birthYear": null,
+      "groupId": 1,
+      "id": 9
+    },
+    {
+      "fullName": "",
+      "course": 0,
+      "year": 2020,
+      "birthYear": 2000,
+      "groupId": 1,
+      "id": 10
+    },
+    {
+      "fullName": "",
+      "course": 0,
+      "year": 2020,
+      "birthYear": 2000,
+      "groupId": 1,
+      "id": 11
     }
   ],
   "groups": [
-    { "id": 1, "name": "6409-010302D" },
-    { "id": 2, "name": "6314-020302D" },
-    { "id": 3, "name": "6207-010302D" }
+    {
+      "id": 1,
+      "name": "6409-010302D"
+    },
+    {
+      "id": 2,
+      "name": "6314-020302D"
+    },
+    {
+      "id": 3,
+      "name": "6207-010302D"
+    }
   ]
 }

@@ -1,19 +1,7 @@
-<div class="group-info">
-  <h3>Information about the group</h3>
-  <p *ngIf="groupId; else groupNotFound">Student group: {{ groupId }}</p>
-  <ng-template #groupNotFound>
-    <p>Group not found..</p>
-  </ng-template>
-</div>
-<div *ngFor="let student of students">
-  <p>{{ student.id }} {{ student.fullName }}</p>
-  <p>{{ student.birthYear }}</p>
-  <p>{{ student.course }}</p>
-</div>
-
 <div style="margin: 20px">
+  <button (click)="handlerClick()">Добавить нового студента</button>
   <h2>Выберите группу</h2>
-  <mat-form-field appearance="fill" style="width: 300px">
+  <mat-form-field appearance="fill" style="width: 300px; height: 70px">
     <mat-label>Группы</mat-label>
     <mat-select (selectionChange)="onGroupChange($event.value)">
       <mat-option *ngFor="let group of groups" [value]="group.id">
@@ -21,4 +9,27 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
+  <div *ngIf="students.length > 0" style="margin-top: 20px">
+    <h3>Список студентов</h3>
+    <ul>
+      <li
+        *ngFor="let student of students"
+        [birthYear]="student.birthYear"
+        appItalic
+      >
+        {{ student.id }}. {{ student.fullName }}.
+        {{ student.birthYear | birthCentury }}
+        <button (click)="navigateToEdit(student.id)">
+          Редактировать студента
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div
+    *ngIf="selectedGroupId && students.length === 0"
+    style="margin-top: 20px"
+  >
+    <p>Студенты отсутствуют в выбранной группе.</p>
+  </div>
 </div>
