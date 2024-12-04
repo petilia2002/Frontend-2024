@@ -1,0 +1,10 @@
+<div class="greeting-section">
+  <h2>Welcome to my website!</h2>
+  <label
+    >What is your name?
+    <p>{{ userName }}</p></label
+  >
+  <input type="text" id="username" name="username" [(ngModel)]="userName" />
+  <button class="greet-btn" (click)="handlerClick()">Greet</button>
+  <app-hello [userName]="userName" [isGreeting]="isGreeting"></app-hello>
+</div>

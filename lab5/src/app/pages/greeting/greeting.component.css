@@ -1,0 +1,43 @@
+.greeting-section {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.greeting-section h2 {
+  margin-bottom: 10px;
+}
+
+.greeting-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.greeting-section label p {
+  display: inline;
+  color: gray;
+  font-style: normal;
+}
+
+.greeting-section input[type="text"] {
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.greet-btn {
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: lightskyblue;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.greet-btn:hover {
+  background: rgb(52, 176, 253);
+}

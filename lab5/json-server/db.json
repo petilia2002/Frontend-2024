@@ -1,0 +1,49 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "fullName": "Иванов Иван Иванович",
+      "course": 3,
+      "groupId": 2,
+      "year": 2020,
+      "birthYear": 2003
+    },
+    {
+      "id": 2,
+      "fullName": "Петренков Илья Алексеевич",
+      "course": 4,
+      "groupId": 1,
+      "year": 2020,
+      "birthYear": 2002
+    },
+    {
+      "id": 3,
+      "fullName": "Панкратова Екатерина Сергеевна",
+      "course": 4,
+      "groupId": 1,
+      "year": 2020,
+      "birthYear": 2002
+    },
+    {
+      "id": 4,
+      "fullName": "Фазылов Руслан Тахирович",
+      "course": 4,
+      "groupId": 1,
+      "year": 2020,
+      "birthYear": 2002
+    },
+    {
+      "id": 5,
+      "fullName": "Васильев Денис Дмитриевич",
+      "course": 2,
+      "groupId": 3,
+      "year": 2022,
+      "birthYear": 2004
+    }
+  ],
+  "groups": [
+    { "id": 1, "name": "6409-010302D" },
+    { "id": 2, "name": "6314-020302D" },
+    { "id": 3, "name": "6207-010302D" }
+  ]
+}
