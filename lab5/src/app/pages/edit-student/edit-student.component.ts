@@ -47,12 +47,12 @@ export class EditStudentComponent {
     private router: Router
   ) {
     this.studentId = this.activatedRoute.snapshot.params['studentId'];
-    console.log(this.studentId);
+    //console.log(this.studentId);
     this.studentsService.getStudentById(this.studentId).subscribe((student) => {
-      console.log(student);
+      //console.log(student);
       this.student = student[0];
     });
-    console.log(this.student);
+    //console.log(this.student);
   }
 
   ngOnInit() {
@@ -62,12 +62,12 @@ export class EditStudentComponent {
   }
 
   onSubmit(form: NgForm) {
-    console.log('Submit!');
-    console.log(this.student);
+    //console.log('Submit!');
+    //console.log(this.student);
     const { id, ...studentWithoutId } = this.student;
     this.studentsService.updateStudent(id, studentWithoutId).subscribe({
       next: (student) => {
-        console.log('Student updated!', student);
+        //console.log('Student updated!', student);
         form.reset();
         this.router.navigate(['/groups']);
       },

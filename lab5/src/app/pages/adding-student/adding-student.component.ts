@@ -36,7 +36,7 @@ export class AddingStudentComponent implements OnInit {
     groupId: new FormControl(1, Validators.required),
   });
   groups: Group[] = [];
-  //selectedGroupId: number = 0;
+  saved: boolean = false;
 
   constructor(
     private studentsService: StudentsService,
@@ -51,18 +51,15 @@ export class AddingStudentComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.myForm.getRawValue());
+    //console.log(this.myForm.getRawValue());
     this.studentsService.addStudent(this.myForm.getRawValue()).subscribe({
       next: (student) => {
-        console.log('Student added', student);
+        //console.log('Student added', student);
         this.myForm.reset();
+        this.saved = true;
         this.router.navigate(['/groups']);
       },
       error: (error) => console.error('Error adding student', error),
     });
   }
-
-  // onGroupChange(groupId: number): void {
-  //   this.selectedGroupId = +groupId;
-  // }
 }

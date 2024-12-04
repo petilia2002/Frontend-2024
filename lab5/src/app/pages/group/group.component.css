@@ -1,0 +1,126 @@
+/* Контейнер для всей секции */
+.group-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование по горизонтали */
+  background-color: #e3f2fd; /* Светло-голубой фон */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  gap: 15px; /* Расстояние между элементами */
+}
+
+/* Кнопка */
+.add_btn {
+  background-color: #1565c0; /* Синий фон */
+  color: #ffffff; /* Белый текст */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add_btn:hover {
+  background-color: #0d47a1; /* Более темный синий при наведении */
+}
+
+/* Заголовки */
+h2,
+h3 {
+  color: #1565c0; /* Синий цвет текста */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+/* Выпадающий список */
+mat-form-field {
+  width: 300px;
+  background-color: #ffffff; /* Белый фон */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Список студентов */
+.list-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.list-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Белый фон */
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #bbdefb; /* Голубая рамка */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.list-items li button {
+  background-color: #1565c0; /* Синий фон */
+  color: #ffffff; /* Белый текст */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list-items li button:hover {
+  background-color: #0d47a1; /* Более темный синий */
+}
+
+/* Сообщение об отсутствии студентов */
+.not-found-items p {
+  color: #d32f2f; /* Красный цвет для акцента */
+  font-size: 14px;
+  text-align: center;
+}
+
+.list-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Белый фон */
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #bbdefb; /* Голубая рамка */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  gap: 10px; /* Расстояние между текстом и кнопкой */
+}
+
+/* Текст внутри строки */
+.list-items li span {
+  flex-grow: 1; /* Занимает оставшееся место */
+  overflow: hidden; /* Скрывает текст, выходящий за пределы */
+  white-space: nowrap; /* Отключает перенос текста */
+  text-overflow: ellipsis; /* Добавляет многоточие для длинного текста */
+  margin-right: 10px; /* Отступ между текстом и кнопкой */
+}
+
+/* Кнопка */
+.list-items li button {
+  background-color: #1565c0; /* Синий фон */
+  color: #ffffff; /* Белый текст */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0; /* Кнопка не сжимается */
+}
+
+.list-items li button:hover {
+  background-color: #0d47a1; /* Более темный синий */
+}

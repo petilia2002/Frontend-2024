@@ -4,6 +4,7 @@ import { GreetingComponent } from './pages/greeting/greeting.component';
 import { GroupComponent } from './pages/group/group.component';
 import { AddingStudentComponent } from './pages/adding-student/adding-student.component';
 import { EditStudentComponent } from './pages/edit-student/edit-student.component';
+import { exitGuard } from './guards/exit/exit.guard';
 
 export const routes: Routes = [
   {
@@ -25,6 +26,7 @@ export const routes: Routes = [
   {
     path: 'students/adding',
     component: AddingStudentComponent,
+    canDeactivate: [exitGuard],
   },
   {
     path: 'students/edit/:studentId',

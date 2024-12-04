@@ -1,5 +1,7 @@
-<div style="margin: 20px">
-  <button (click)="handlerClick()">Добавить нового студента</button>
+<div class="group-section" style="margin: 20px">
+  <button class="add_btn" (click)="handlerClick()">
+    Добавить нового студента
+  </button>
   <h2>Выберите группу</h2>
   <mat-form-field appearance="fill" style="width: 300px; height: 70px">
     <mat-label>Группы</mat-label>
@@ -9,15 +11,15 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
-  <div *ngIf="students.length > 0" style="margin-top: 20px">
+  <div class="list-items" *ngIf="students.length > 0" style="margin-top: 20px">
     <h3>Список студентов</h3>
     <ul>
       <li
-        *ngFor="let student of students"
+        *ngFor="let student of students; let i = index"
         [birthYear]="student.birthYear"
         appItalic
       >
-        {{ student.id }}. {{ student.fullName }}.
+        {{ i + 1 }}. {{ student.fullName }}.
         {{ student.birthYear | birthCentury }}
         <button (click)="navigateToEdit(student.id)">
           Редактировать студента
@@ -27,6 +29,7 @@
   </div>
 
   <div
+    class="not-found-items"
     *ngIf="selectedGroupId && students.length === 0"
     style="margin-top: 20px"
   >

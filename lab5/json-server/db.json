@@ -13,7 +13,7 @@
       "course": 4,
       "groupId": 1,
       "year": 2020,
-      "birthYear": 2002,
+      "birthYear": 2000,
       "id": 2
     },
     {
@@ -41,52 +41,60 @@
       "birthYear": 2004
     },
     {
-      "fullName": "Илья",
-      "course": 0,
-      "year": 2020,
-      "birthYear": 2000,
       "id": 6,
-      "groupId": 3
+      "fullName": "Майборода Татьяна Станиславовна",
+      "course": 4,
+      "groupId": 1,
+      "year": 2019,
+      "birthYear": 2001
     },
     {
-      "fullName": "",
-      "course": 0,
+      "id": 7,
+      "fullName": "Янин Дмитрий Сергеевич",
+      "course": 4,
+      "groupId": 1,
       "year": 2020,
-      "birthYear": 2000,
+      "birthYear": 2002
+    },
+    {
+      "id": 8,
+      "fullName": "Зорин Максим Владимирович",
+      "course": 3,
+      "groupId": 2,
+      "year": 2024,
+      "birthYear": 2008
+    },
+    {
+      "id": 9,
+      "fullName": "Маштаков Павел Андреевич",
+      "course": 3,
+      "groupId": 2,
+      "year": 2023,
+      "birthYear": 2006
+    },
+    {
+      "id": 10,
+      "fullName": "Саламатина Полина Александровна",
+      "course": 2,
       "groupId": 3,
-      "id": 7
-    },
-    {
-      "fullName": "",
-      "course": 0,
       "year": 2020,
-      "birthYear": 2000,
-      "groupId": 1,
-      "id": 8
+      "birthYear": 2002
     },
     {
-      "fullName": null,
-      "course": null,
-      "year": null,
-      "birthYear": null,
-      "groupId": 1,
-      "id": 9
-    },
-    {
-      "fullName": "",
-      "course": 0,
+      "id": 11,
+      "fullName": "Головань Анна Сергеевна",
+      "course": 2,
+      "groupId": 3,
       "year": 2020,
-      "birthYear": 2000,
-      "groupId": 1,
-      "id": 10
+      "birthYear": 2002
     },
     {
-      "fullName": "",
-      "course": 0,
-      "year": 2020,
-      "birthYear": 2000,
+      "fullName": "Королев Сергей Антонович",
+      "course": 4,
+      "year": 1993,
+      "birthYear": 2002,
       "groupId": 1,
-      "id": 11
+      "id": 12
     }
   ],
   "groups": [
