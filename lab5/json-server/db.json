@@ -95,6 +95,22 @@
       "birthYear": 2002,
       "groupId": 1,
       "id": 12
+    },
+    {
+      "fullName": "Петров Петр Иванович",
+      "course": 2,
+      "year": 2022,
+      "birthYear": 2004,
+      "groupId": 3,
+      "id": 13
+    },
+    {
+      "fullName": "Антонов Антон Антонович",
+      "course": 3,
+      "year": 2020,
+      "birthYear": 2004,
+      "groupId": 1,
+      "id": 14
     }
   ],
   "groups": [

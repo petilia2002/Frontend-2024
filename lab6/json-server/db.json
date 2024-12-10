@@ -1,0 +1,76 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "type": "bug",
+      "priority": "critical",
+      "status": "in-progress",
+      "title": "Ошибка при входе в систему",
+      "description": "При вводе неверного пароля не отображается сообщение об ошибке.",
+      "assignee": "Иван Иванов",
+      "creator": "Петр Петров",
+      "createdAt": "2024-12-01T10:00:00Z",
+      "updatedAt": "2024-12-10T21:45:27.001Z"
+    },
+    {
+      "id": 2,
+      "type": "task",
+      "priority": "high",
+      "status": "completed",
+      "title": "Реализация страницы авторизации",
+      "description": "Необходимо создать фронтенд для страницы авторизации с использованием Angular.",
+      "assignee": "Мария Смирнова",
+      "creator": "Алексей Кузнецов",
+      "createdAt": "2024-12-02T14:30:00Z",
+      "updatedAt": "2024-12-11T01:31:44.011"
+    },
+    {
+      "id": 3,
+      "type": "bug",
+      "priority": "medium",
+      "status": "completed",
+      "title": "Неверный формат даты в отчёте",
+      "description": "В отчёте отображается дата в формате MM/DD/YYYY вместо DD.MM.YYYY.",
+      "assignee": "Анна Крылова",
+      "creator": "Иван Иванов",
+      "createdAt": "2024-12-04T09:15:00Z",
+      "updatedAt": "2024-12-04T09:15:00Z"
+    },
+    {
+      "id": 4,
+      "type": "task",
+      "priority": "low",
+      "status": "completed",
+      "title": "Обновление README-файла",
+      "description": "Добавить инструкцию по развертыванию проекта в README.",
+      "assignee": "Петр Петров",
+      "creator": "Анна Крылова",
+      "createdAt": "2024-11-28T13:00:00Z",
+      "updatedAt": "2024-12-10T22:25:18.349Z"
+    },
+    {
+      "id": 5,
+      "type": "bug",
+      "priority": "high",
+      "status": "in-progress",
+      "title": "Проблема с загрузкой изображений",
+      "description": "При загрузке изображений большого размера возникает ошибка 413.",
+      "assignee": "Мария Смирнова",
+      "creator": "Алексей Кузнецов",
+      "createdAt": "2024-12-03T08:45:00Z",
+      "updatedAt": "2024-12-05T10:20:00Z"
+    },
+    {
+      "type": "task",
+      "priority": "medium",
+      "status": "in-progress",
+      "title": "Write hello world on ASM",
+      "description": "",
+      "assignee": "",
+      "creator": "",
+      "createdAt": "2024-12-10T20:33:30.358Z",
+      "updatedAt": "2024-12-10T21:28:04.313Z",
+      "id": 6
+    }
+  ]
+}

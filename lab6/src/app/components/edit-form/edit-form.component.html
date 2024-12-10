@@ -1,0 +1,39 @@
+<div class="form-page">
+  <div class="form-container">
+    <h2>Редактировать</h2>
+    <form (ngSubmit)="saveTask()">
+      <label>Тип:</label>
+      <select [(ngModel)]="task.type" name="type" required>
+        <option value="bug">Баг</option>
+        <option value="task">Таск</option>
+      </select>
+      <label>Приоритет:</label>
+      <select [(ngModel)]="task.priority" name="priority" required>
+        <option value="critical">Критический</option>
+        <option value="high">Высокий</option>
+        <option value="medium">Средний</option>
+        <option value="low">Низкий</option>
+      </select>
+      <label>Статус:</label>
+      <select [(ngModel)]="task.status" name="status" required>
+        <option value="in-progress">В процессе</option>
+        <option value="completed">Выполнено</option>
+      </select>
+      <label>Название:</label>
+      <input type="text" [(ngModel)]="task.title" name="title" required />
+      <label>Описание:</label>
+      <textarea
+        style="resize: none"
+        cols="30"
+        rows="3"
+        [(ngModel)]="task.description"
+        name="description"
+      ></textarea>
+      <label>Исполнитель:</label>
+      <input type="text" [(ngModel)]="task.assignee" name="assignee" required />
+      <label>Создатель:</label>
+      <input type="text" [(ngModel)]="task.creator" name="creator" required />
+      <button type="submit">Save</button>
+    </form>
+  </div>
+</div>
