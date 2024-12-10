@@ -25,17 +25,39 @@
     />
     <button class="add-btn" (click)="addTask()">Создать</button>
   </div>
-
-  <ul>
-    <li *ngFor="let task of filteredTasks">
-      <p>
-        {{ task.title }} - {{ task.type }} - {{ task.priority }} -
-        {{ task.updatedAt }}
-      </p>
-      <div class="btn-container">
-        <button class="edit-btn" (click)="editTask(task.id)">Изменить</button>
-        <button class="edit-btn" (click)="deleteTask(task.id)">Удалить</button>
-      </div>
-    </li>
-  </ul>
+  <table class="task-table">
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>Тип</th>
+        <th>Приоритет</th>
+        <th>Название</th>
+        <th>Исполнитель</th>
+        <th>Создатель</th>
+        <th>Статус</th>
+        <th>Последнее изменение</th>
+        <th>Действия</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of filteredTasks; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ task.type }}</td>
+        <td class="priority {{ task.priority }}">{{ task.priority }}</td>
+        <td>{{ task.title }}</td>
+        <td>{{ task.assignee }}</td>
+        <td>{{ task.creator }}</td>
+        <td>{{ task.status }}</td>
+        <td>{{ task.updatedAt | date : "short" }}</td>
+        <td>
+          <button class="action-btn edit-btn" (click)="editTask(task.id)">
+            Изменить
+          </button>
+          <button class="action-btn delete-btn" (click)="deleteTask(task.id)">
+            Удалить
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

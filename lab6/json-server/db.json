@@ -28,13 +28,13 @@
       "id": 3,
       "type": "bug",
       "priority": "medium",
-      "status": "completed",
+      "status": "in-progress",
       "title": "Неверный формат даты в отчёте",
       "description": "В отчёте отображается дата в формате MM/DD/YYYY вместо DD.MM.YYYY.",
       "assignee": "Анна Крылова",
       "creator": "Иван Иванов",
       "createdAt": "2024-12-04T09:15:00Z",
-      "updatedAt": "2024-12-04T09:15:00Z"
+      "updatedAt": "2024-12-11T02:26:21.695"
     },
     {
       "id": 4,
