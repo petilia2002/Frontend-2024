@@ -58,7 +58,7 @@
       "assignee": "Мария Смирнова",
       "creator": "Алексей Кузнецов",
       "createdAt": "2024-12-03T08:45:00Z",
-      "updatedAt": "2024-12-05T10:20:00Z"
+      "updatedAt": "2024-12-11T13:20:11.751"
     },
     {
       "type": "task",
@@ -69,8 +69,20 @@
       "assignee": "",
       "creator": "",
       "createdAt": "2024-12-10T20:33:30.358Z",
-      "updatedAt": "2024-12-10T21:28:04.313Z",
+      "updatedAt": "2024-12-11T14:55:36.864",
       "id": 6
+    },
+    {
+      "type": "task",
+      "priority": "medium",
+      "status": "in-progress",
+      "title": "",
+      "description": "",
+      "assignee": "",
+      "creator": "",
+      "createdAt": "2024-12-11T14:54:47.986",
+      "updatedAt": "2024-12-11T14:54:47.986",
+      "id": 7
     }
   ]
 }
